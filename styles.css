@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    transition: box-shadow 0.3s ease; /* Adding transition */
+}
+
+.container:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Adding box shadow on hover */
+}
+
+h1 {
+    margin-top: 0;
+    color: #007aff; /* Apple's default blue color */
+    font-family: 'Inter', sans-serif; /* Set font to Inter */
+    font-weight: bold; /* Set font weight to bold */
+    letter-spacing: -0.06em; /* Set letter spacing to -60 characters */
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-group input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.toggle {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.toggle span {
+    display: inline-block;
+    margin-right: 10px;
+    color: #555;
+    font-size: 14px;
+    font-weight: normal; /* Set font weight to normal */
+}
+
+.toggle input[type="checkbox"] {
+    display: none;
+}
+
+.toggle label {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 80px;
+    height: 40px;
+    background-color: #e5e5ea;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle label div.slider {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 36px;
+    height: 36px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.toggle input[type="checkbox"]:checked + label {
+    background-color: #007aff; /* Apple's default blue color */
+}
+
+.toggle input[type="checkbox"]:checked + label div.slider {
+    transform: translateX(40px);
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #007aff; /* Apple's default blue color */
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    color: #555;
+}
