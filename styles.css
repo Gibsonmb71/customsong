@@ -4,11 +4,15 @@ body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f7f7f7;
+}
+
+.welcome {
+    background-color: #007aff; /* Apple's default blue color */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: bold;
+    letter-spacing: -0.03em; /* -30 character spacing */
 }
 
 .container {
