@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Title Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="welcome">
+        <h2>Welcome to Custom Song</h2>
+    </div>
+    <div class="container">
+        <h1>Song Search</h1>
+        <div class="input-group">
+            <input type="text" id="songTitleInput" placeholder="Song Title">
+            <input type="text" id="artistInput" placeholder="Artist">
+        </div>
+        <div class="toggle">
+            <span>Clean</span>
+            <input type="checkbox" id="toggle-clean">
+            <label for="toggle-clean"><div class="slider"></div></label>
+            <span>All Results</span>
+        </div>
+        <button onclick="findSong()">Search</button>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
